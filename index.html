@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gameland</title>
+    <link rel="stylesheet" href="./estilos/estilo.css">
+</head>
+<body>
+    <main>
+        <section id="bf-section" class="borda-img">
+            <img id="bf-img" src="./assets/bf.jpg" alt="Black Friday">
+        </section>
+        
+        <section id="bf-container">
+            <div id="bf-detalhes">
+                <h1>Sua Black Friday com ofertas exclusivas que você <span class="atencao">precisa!</span></h1>
+                <p>
+                    No próximo quadro nos informe seu nome, seu melhor e-mail e suas preferências. Nossas ofertas serão enviadas de acordo com a sua necessidade.
+                </p>
+            </div>
+            <div id="bf-formulario">
+                <form id="form">
+                    <input type="text" placeholder="Nome" id='nome'>
+                    <input type="text" placeholder="E-mail" id='email'>
+                    <div id="preferencias">
+                        <p>Preferências:</p>
+                        <input type="button" id="button-ps4" class="preference-button" value="PS4" onclick="buttonPS4()" clicado="false">
+                        <input type="button" id="button-ps5" class="preference-button" value="PS5"onclick="buttonPS5()" clicado="false">
+                        <input type="button" id="button-xone" class="preference-button" value="XBOX One"onclick="buttonXOne()" clicado="false">
+                        <input type="button" id="button-xseries" class="preference-button" value="XBOX Series"onclick="buttonXSeries()" clicado="false">
+                        <input type="button" id="button-nintendo" class="preference-button" value="Nintendo"onclick="buttonNintendo()" clicado="false">
+                        <input type="button" id="button-pc" class="preference-button" value="PC"onclick="buttonPC()" clicado="false">
+                    </div>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>  
+    </main  >
+
+    <footer>Todos os direitos reservados.</footer>
+    <script src="./script.js"></script>
+</body>
+</html>
